@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Vishnu Priya's Resume</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><button onclick="showSection('about')">About Me</button></li>
+            <li><button onclick="showSection('skills')">Skills</button></li>
+            <li><button onclick="showSection('experience')">Experience</button></li>
+            <li><button onclick="showSection('education')">Education</button></li>
+            <li><button onclick="showSection('contact')">Contact</button></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <!-- About Section -->
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>I'm Vishnu Priya Bommarasipeta, an AI Engineer passionate about technology and innovation. Experienced in developing machine learning models and full-stack applications.</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming: Python, JavaScript, C++</li>
+                <li>Machine Learning: TensorFlow, PyTorch</li>
+                <li>Web Development: HTML, CSS, React</li>
+            </ul>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <h2>Experience</h2>
+            <p><strong>Consultant-Intelligent Automation</strong> at Percipere</p>
+            <p>Developed scalable machine learning models for predictive analysis.</p>
+            <p><strong>RPA Developer</strong> at Percipere</p>
+            <p>Designs, builds, and maintains software robots, or bots, to automate business processes.</p>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <h2>Education</h2>
+            <p>Masters in Computer Science (2024-present))</p>
+            <p>B.tech. in Computer Science (2018-2022))</p>
+
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p>Email: vishnupriya13b@gmail.com</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/vishnu-priya-b-85b4a5200" target="_blank">linkedin.com/in/vishnu</a></p>
+        </section>
+    </main>
+    
+    <aside>
+        <h2>Certifications</h2>
+        <ul>
+            <li>Certified TensorFlow Developer</li>
+            <li>Google Data Engineer</li>
+            <li>AWS Certified Solutions Architect</li>
+            <li>Microsoft Certified: Azure AI Engineer</li>
+        </ul>
+    </aside>
+    
+    <footer>
+        
+            <p>Last updated: 
+                <span id="lastModified"></span>
+            </p>
+        
+        <script type="text/javascript">
+             var x = document.lastModified;
+             document.getElementById('lastModified').textContent = x;
+        </script>
+        <p>Last updated: <span id="lastModified"></span></p>
+        <p>Addendum: This interactive resume page includes sections like About, Skills, Experience, Education, and Contact, making it easy for users to view different information interactively. Challenges included setting up the layout to work responsively, solved using CSS Grid.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        var x = document.lastModified;
+        document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
